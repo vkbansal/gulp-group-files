@@ -1,0 +1,34 @@
+{
+  "name": "gulp-group-files",
+  "version": "0.1.0",
+  "description": "A gulp plugin for grouping files via an object for further processing",
+  "main": "index.js",
+  "scripts": {
+    "test": "jasmine-node test/group-files-spec.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/vkbansal/gulp-group-files.git"
+  },
+  "keywords": [
+    "gulp",
+    "group",
+    "files",
+    "gulpplugin",
+    "gulp-group",
+    "gulp-group-files",
+    "gulp-group-file"
+  ],
+  "author": "Vivek Kumar Bansal",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/vkbansal/gulp-group-files/issues"
+  },
+  "homepage": "https://github.com/vkbansal/gulp-group-files",
+  "dependencies": {
+    "event-stream": "^3.1.7"
+  },
+  "devDependencies": {
+    "jasmine-node": "^1.14.5"
+  }
+}
