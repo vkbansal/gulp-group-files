@@ -1,4 +1,4 @@
-#gulp-group-files
+#gulp-group-files [![Build Status](https://travis-ci.org/vkbansal/gulp-group-files.svg?branch=master)](https://travis-ci.org/vkbansal/gulp-group-files)
 A gulp plugin for grouping files via an object for further processing
 
 ##Install
