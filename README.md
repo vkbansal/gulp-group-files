@@ -58,8 +58,8 @@ var scripts = {
         'bower_components/backbone.stickit/backbone.stickit.js'
     ],
     'bootstrap':[
-        'bootstrap/js/bootstrap.js',
-        'bootstrap-plugin/js/bootstrap-plugin.js'
+        'bower_components/bootstrap/js/bootstrap.js',
+        'bower_components/bootstrap-plugin/js/bootstrap-plugin.js'
     ]
 };
 
