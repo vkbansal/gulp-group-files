@@ -69,3 +69,6 @@ gulp.task('scripts',group(scripts, function(name,files){
             .pipe(gulp.dest("dist/js/"));
 });
 ```
+
+##License
+The MIT License (MIT)
