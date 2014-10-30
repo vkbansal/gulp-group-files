@@ -1,6 +1,6 @@
 {
   "name": "gulp-group-files",
-  "version": "0.1.0",
+  "version": "1.0.0",
   "description": "A gulp plugin for grouping files via an object for further processing",
   "main": "index.js",
   "scripts": {
