@@ -1,6 +1,6 @@
 {
-  "name": "gulp-group-files",
-  "version": "1.0.0",
+  "name": "@vkbansal/gulp-group-files",
+  "version": "2.0.0",
   "description": "A gulp plugin for grouping files via an object for further processing",
   "main": "index.js",
   "scripts": {
@@ -26,7 +26,7 @@
   },
   "homepage": "https://github.com/vkbansal/gulp-group-files",
   "dependencies": {
-    "event-stream": "^3.1.7"
+    "event-stream": "^3.3.1"
   },
   "devDependencies": {
     "jasmine-node": "^1.14.5"

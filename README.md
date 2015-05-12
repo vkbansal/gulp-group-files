@@ -1,10 +1,10 @@
-[![NPM version](https://badge.fury.io/js/gulp-group-files.svg)](http://badge.fury.io/js/gulp-group-files) [![Build Status](https://travis-ci.org/vkbansal/gulp-group-files.svg?branch=master)](https://travis-ci.org/vkbansal/gulp-group-files) [![Dependencies](https://david-dm.org/vkbansal/gulp-group-files.png)](https://david-dm.org/vkbansal/gulp-group-files) [![devDependency Status](https://david-dm.org/vkbansal/gulp-group-files/dev-status.svg)](https://david-dm.org/vkbansal/gulp-group-files#info=devDependencies)
+[![NPM version](https://badge.fury.io/js/gulp-group-files.svg)](http://badge.fury.io/js/gulp-group-files) [![Build Status](https://travis-ci.org/vkbansal/gulp-group-files.svg?branch=master)](https://travis-ci.org/vkbansal/gulp-group-files)
 #gulp-group-files
 A gulp plugin for grouping files via an object for further processing
 
 ##Install
 ```
-npm install gulp-group-files --save-dev
+npm install @vkbansal/gulp-group-files --save-dev
 ```
 
 ##Use case
@@ -54,7 +54,7 @@ var gulp = require ('gulp'),
 
 var scripts = {
     'backbone': [
-        'bower_components/underscore/underscore.js', 
+        'bower_components/underscore/underscore.js',
         'bower_components/backbone/backbone.js',
         'bower_components/backbone.stickit/backbone.stickit.js'
     ],
