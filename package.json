@@ -1,5 +1,5 @@
 {
-  "name": "@vkbansal/gulp-group-files",
+  "name": "gulp-group-files",
   "version": "2.0.0",
   "description": "A gulp plugin for grouping files via an object for further processing",
   "main": "index.js",

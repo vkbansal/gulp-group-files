@@ -4,7 +4,7 @@ A gulp plugin for grouping files via an object for further processing
 
 ##Install
 ```
-npm install @vkbansal/gulp-group-files --save-dev
+npm install gulp-group-files --save-dev
 ```
 
 ##Use case
