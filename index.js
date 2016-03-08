@@ -4,9 +4,9 @@ module.exports = function(obj, tasks){
     return function(){
         var streams = [];
         
-        for(key in obj){
+        for(var key in obj){
             if(obj.hasOwnProperty(key)){
-                streams.push(tasks.call(null,key, obj[key]));
+                streams.push(tasks.call(null, key, obj[key]));
             }
         }
 
