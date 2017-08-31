@@ -1,13 +1,13 @@
 [![NPM version](https://badge.fury.io/js/gulp-group-files.svg)](http://badge.fury.io/js/gulp-group-files) [![Build Status](https://travis-ci.org/vkbansal/gulp-group-files.svg?branch=master)](https://travis-ci.org/vkbansal/gulp-group-files)
-#gulp-group-files
+# gulp-group-files
 A gulp plugin for grouping files via an object for further processing
 
-##Install
+## Install
 ```
 npm install gulp-group-files --save-dev
 ```
 
-##Use case
+## Use case
 This gives you a solution to build different packages out of objects. Given this structure:
 ```
 bower_components
@@ -36,23 +36,24 @@ bower_components
           └─── [somefontfiles]
 ```
 
-It is very easy to build
+It is very easy to build:
 
 ```
 dist
 └─── js
      ├─── backbone.js //contains underscore, backbone and backbone.stickit
-     └─── bootstrap.js //contains bootstrap and bootstrap-plugin
+     ├─── bootstrap.js //contains bootstrap and bootstrap-plugin
+     └─── all.js //contains everything
 ```
 
-##Usage
+## Usage
 ```js
 
-var gulp = require ('gulp'),
-    concat = require('gulp-concat'),
-    group = require('gulp-group-files');
+const gulp = require ('gulp'),
+      concat = require('gulp-concat'),
+      group = require('gulp-group-files');
 
-var scripts = {
+const scripts = {
     'backbone': [
         'bower_components/underscore/underscore.js',
         'bower_components/backbone/backbone.js',
@@ -61,6 +62,9 @@ var scripts = {
     'bootstrap':[
         'bower_components/bootstrap/js/bootstrap.js',
         'bower_components/bootstrap-plugin/js/bootstrap-plugin.js'
+    ],
+    'all':[
+        '**/*.js', // Wildcard example
     ]
 };
 
@@ -68,8 +72,8 @@ gulp.task('scripts',group(scripts, function(name,files){
     return gulp.src(files)
             .pipe(concat(name + ".js"))
             .pipe(gulp.dest("dist/js/"));
-});
+}));
 ```
 
-##License
+## License
 The MIT License (MIT)
